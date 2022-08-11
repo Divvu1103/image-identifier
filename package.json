@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.0.4",
+    "@tensorflow/tfjs-converter": "^1.2.1",
+    "@tensorflow/tfjs-core": "^1.2.1",
     "next": "12.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-modal": "^3.15.1",
+    "sass": "^1.54.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
     "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4"
+    "eslint-config-next": "12.2.4",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
