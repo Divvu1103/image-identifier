@@ -4,8 +4,6 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import * as mobilenet from "@tensorflow-models/mobilenet";
 
-
-
 export default function Home() {
   const [isModelLoading, setIsModelLoading] = useState(false);
   const [model, setModel] = useState(null);
@@ -65,7 +63,12 @@ export default function Home() {
   }, [imageURL]);
 
   if (isModelLoading) {
-    return <h2>Model Loading...</h2>;
+    return (
+      <>
+        <Head>Image Identifier</Head>
+        <h2>Model Loading...</h2>;
+      </>
+    );
   }
 
   return (
