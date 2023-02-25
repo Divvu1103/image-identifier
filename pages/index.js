@@ -36,7 +36,7 @@ export default function Home() {
       setImageURL(null);
     }
   };
-
+     
   const identify = async () => {
     textInputRef.current.value = "";
     const results = await model.classify(imageRef.current);
